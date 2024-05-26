@@ -7,7 +7,6 @@ I preprocessed the data through the following steps:
 
 * Dropped non-beneficial columns.
 * Analyzed the number of data points for each unique value in columns with more than 10 unique values, specifically APPLICATION_TYPE and CLASSIFICATION.
-* Selected cutoff points of 600 and 300, respectively, to bin rare categorical values into a new category called "Other".
 * Converted categorical data to numeric using pd.get_dummies().
 * Divided the data into a target array (IS_SUCCESSFUL) and feature arrays.
 * Applied train_test_split to create training and testing datasets.
